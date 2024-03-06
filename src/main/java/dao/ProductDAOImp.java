@@ -1,11 +1,12 @@
 package dao;
 
 import models.Product;
+
 import java.util.ArrayList;
 
 public class ProductDAOImp implements ProductDAO {
 
-    private ArrayList<Product> products = new ArrayList<>();
+    private final ArrayList<Product> products = new ArrayList<>();
 
     @Override
     public ArrayList<Product> getAllProducts() {
@@ -48,6 +49,7 @@ public class ProductDAOImp implements ProductDAO {
 
     @Override
     public void displayProduct(Product product) {
+
 
         // Implement logic to display a product
         System.out.println("Product ID: " + product.getId());
